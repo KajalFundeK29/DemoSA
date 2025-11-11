@@ -18,7 +18,7 @@ public class BaseClass
 	public void setup()
 	{
 		driver=new ChromeDriver();
-		driver.get("https://automationplayground.com/crm/");
+		driver.get("http://automationplayground.com/crm/");
 	     hp=new HomePage(driver);
 	     lp=new LoginPage(driver);
 	}
