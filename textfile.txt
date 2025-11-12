@@ -1,6 +1,2 @@
 This is gitHub demo
-
-update 1
-branch update
-just in case
-again update
+updating for jenkins
