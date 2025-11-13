@@ -103,17 +103,17 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="seleniumGrid.ParallelTest" class="method navigator-link" hash-for-method="crossBrowserTest(Edge)">crossBrowserTest(Edge)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="seleniumGrid.ParallelTest" class="method navigator-link" hash-for-method="crossBrowserTest(Chrome)">crossBrowserTest(Chrome)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="seleniumGrid.ParallelTest" class="method navigator-link" hash-for-method="crossBrowserTest(Firefox)">crossBrowserTest(Firefox)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="seleniumGrid.ParallelTest" class="method navigator-link" hash-for-method="crossBrowserTest(Edge)">crossBrowserTest(Edge)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -136,6 +136,14 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="crossBrowserTest(Edge)">
+                  </a> <!-- crossBrowserTest(Edge) -->
+                  <span class="method-name">crossBrowserTest</span>
+                  <span class="parameters">(Edge)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="crossBrowserTest(Chrome)">
                   </a> <!-- crossBrowserTest(Chrome) -->
                   <span class="method-name">crossBrowserTest</span>
@@ -150,14 +158,6 @@
                   <span class="parameters">(Firefox)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="crossBrowserTest(Edge)">
-                  </a> <!-- crossBrowserTest(Edge) -->
-                  <span class="method-name">crossBrowserTest</span>
-                  <span class="parameters">(Edge)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
@@ -169,20 +169,20 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;ChromeTest&quot;&gt;
+&lt;suite parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;ChromeTest&quot;&gt;
     &lt;parameter name=&quot;bname&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;seleniumGrid.ParallelTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- ChromeTest --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;FirefoxTest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;FirefoxTest&quot;&gt;
     &lt;parameter name=&quot;bname&quot; value=&quot;Firefox&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;seleniumGrid.ParallelTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- FirefoxTest --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;EdgeTest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;EdgeTest&quot;&gt;
     &lt;parameter name=&quot;bname&quot; value=&quot;Edge&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;seleniumGrid.ParallelTest&quot;/&gt;
@@ -235,20 +235,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'crossBrowserTest')
 data.setCell(0, 2, 'seleniumGrid.ParallelTest')
-data.setCell(0, 3, 38760);
+data.setCell(0, 3, 44364);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'crossBrowserTest')
 data.setCell(1, 2, 'seleniumGrid.ParallelTest')
-data.setCell(1, 3, 14670);
+data.setCell(1, 3, 29838);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'crossBrowserTest')
 data.setCell(2, 2, 'seleniumGrid.ParallelTest')
-data.setCell(2, 3, 7481);
+data.setCell(2, 3, 18214);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 44 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -280,12 +280,12 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">crossBrowserTest(Firefox)</span>
-                <span class="method-start">7635 ms</span>
+                <span class="method-name">crossBrowserTest(Edge)</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">crossBrowserTest(Edge)</span>
-                <span class="method-start">22323 ms</span>
+                <span class="method-name">crossBrowserTest(Firefox)</span>
+                <span class="method-start">2 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="EdgeTest(failed)">
-    <parameter name="bname" value="Edge"/>
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="FirefoxTest(failed)">
+    <parameter name="bname" value="Firefox"/>
     <classes>
       <class name="seleniumGrid.ParallelTest">
         <methods>
@@ -10,5 +10,5 @@
         </methods>
       </class> <!-- seleniumGrid.ParallelTest -->
     </classes>
-  </test> <!-- EdgeTest(failed) -->
+  </test> <!-- FirefoxTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
